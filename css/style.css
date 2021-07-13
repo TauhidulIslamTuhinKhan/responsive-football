@@ -1,11 +1,6 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-
-
-
-
-
 /*Common css start*/
 
 * {
@@ -133,3 +128,7 @@ img {
     font-weight: 500;
     color: #6C6C6C;
 }
+
+/*--
+    - Feature
+-----------------------------------------*/

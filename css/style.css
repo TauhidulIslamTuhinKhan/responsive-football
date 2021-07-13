@@ -27,13 +27,19 @@ img {
     justify-content: center;       
 }
 .container {
-    width: 960px;  
-    display: flex;  
-    justify-content: center;
-     align-items: center;    
+    width: 960px;
+    display: flex;      
+    align-items: center;  
+        
 }
 .half-area {
     width: 50%;
+}
+.section-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #18191F;
+    margin-bottom: 30px;
 }
 
 /*--
@@ -99,13 +105,13 @@ img {
     border: 2px solid #2D25A0;
 }
 .profile .players-profile .single-profile .profile-img {
-    margin-bottom: 16px;
     overflow: hidden;
 }
 .profile .players-profile .single-profile .profile-img img {
-    width: 300px;
+    width: 272px;
     height: 256px;
     transform: scale(1);
+    cursor: pointer;
     transition: all linear .3s;
 }
 .profile .players-profile .single-profile .profile-img:hover img {
@@ -120,7 +126,7 @@ img {
     cursor: pointer;
     transition: all linear .3s;
 }
-.profile .players-profile .single-profile .player-info .player-name:hover {
+.profile .players-profile .single-profile:hover .player-info .player-name {
     color: #E02C6D;
 }
 .profile .players-profile .single-profile .player-info .player-carier {
@@ -132,3 +138,55 @@ img {
 /*--
     - Feature
 -----------------------------------------*/
+.feature {
+    margin-top: 70px;
+}
+.feature .featured-videos .videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.feature .videos .single-video {
+    padding: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    border: 2px solid #fff;
+    transition: all linear .3s;
+}
+.feature .videos .single-video:hover {
+    border: 2px solid #2D25A0;
+}
+.feature .videos .single-video .thumbnail {
+    position: relative;
+}
+
+.feature .videos .single-video .thumbnail img {
+    width: 272px;
+    height: 256px;
+}
+
+.feature .videos .single-video .thumbnail .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 36, 36, 0.7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.feature .videos .single-video:hover .thumbnail .overlay {
+    opacity: 1;
+} 
+.feature .videos .single-video .thumbnail .fa-play-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;     
+    opacity: 0;
+    transition: all linear .5s;
+}
+.feature .videos .single-video:hover .thumbnail .fa-play-circle {
+    opacity: 1;
+}

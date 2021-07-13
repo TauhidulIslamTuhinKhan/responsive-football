@@ -1,0 +1,135 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+
+
+
+
+/*Common css start*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+.bg-area {
+    width: 100%;  
+    display: flex;  
+    justify-content: center;       
+}
+.container {
+    width: 960px;  
+    display: flex;  
+    justify-content: center;
+     align-items: center;    
+}
+.half-area {
+    width: 50%;
+}
+
+/*--
+    - Banner
+-----------------------------------------*/
+.banner {
+    background-color: #2D25A0;
+    padding: 80px 0 70px;
+}
+
+.banner-text .banner-heading {
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.banner-text .button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    transition: all linear .3s;
+}
+.banner-text .button:hover {
+    background-color: #F8FF69;
+    color: #E02C6D;    
+}
+.banner-text .button .fa-arrow-right {
+    margin-left: 8px;
+}
+.banner-img .img {
+    padding-left: 70px;
+}
+.banner-img .img img {
+    width: 100%;
+    transform: scale(1);
+    transition: all linear .3s;
+}
+.banner-img .img:hover img {
+    transform: scale(1.2);
+}
+
+/*--
+    - Profile
+-----------------------------------------*/
+.profile {
+    margin-top: 70px;
+}
+.profile .players-profile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.profile .players-profile .single-profile  {
+    padding: 15px 15px 30px 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    border: 2px solid #f1f1f1;
+    transition: all linear .3s;    
+}
+.profile .players-profile .single-profile:hover {
+    border: 2px solid #2D25A0;
+}
+.profile .players-profile .single-profile .profile-img {
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+.profile .players-profile .single-profile .profile-img img {
+    width: 300px;
+    height: 256px;
+    transform: scale(1);
+    transition: all linear .3s;
+}
+.profile .players-profile .single-profile .profile-img:hover img {
+    transform: scale(1.15);
+}
+
+.profile .players-profile .single-profile .player-info .player-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+.profile .players-profile .single-profile .player-info .player-name:hover {
+    color: #E02C6D;
+}
+.profile .players-profile .single-profile .player-info .player-carier {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6C6C6C;
+}

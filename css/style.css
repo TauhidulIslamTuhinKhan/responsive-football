@@ -110,8 +110,7 @@ img {
     overflow: hidden;
 }
 .profile .players-profile .single-profile .profile-img img {
-    width: 272px;
-    height: 256px;
+    width: 100%;    
     transform: scale(1);
     cursor: pointer;
     transition: all linear .3s;
@@ -162,8 +161,7 @@ img {
 }
 
 .feature .videos .single-video .thumbnail img {
-    width: 272px;
-    height: 256px;
+    width: 100%;    
 }
 
 .feature .videos .single-video .thumbnail .overlay {
@@ -254,14 +252,27 @@ img {
     height: 110px;
 }
 .footer .social-media i {
-    font-size: 16px;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     border-radius: 50%;
     background-color: #E7E7E8;
     margin: 17px 7px;
+    transition: all linear .3s;
+}
+.footer .social-media i:hover.fa-instagram {
+    color: #A22D8E;
+}
+.footer .social-media i:hover.fa-dribbble {
+    color: #F082AC;
+}
+.footer .social-media i:hover.fa-twitter {
+    color: #5DA9DD;
+}
+.footer .social-media i:hover.fa-youtube {
+    color: #FF0303;
 }
 .footer .footer-text .text {
     font-size: 18px;
@@ -271,3 +282,83 @@ img {
 .footer .footer-text .fa-copyright {
     color: #7d7d81;
 }
+
+/*--
+    - Responsive
+-----------------------------------------*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .banner .container {
+        flex-direction: column;
+	    padding: 30px 60px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .half-area {
+        width: 100%;
+    }
+    .banner-img .img {
+    margin-top: 70px;
+    }
+    .profile .players-profile {        
+        grid-template-columns: repeat(1, 1fr);       
+    }
+    .feature .featured-videos .videos {        
+        grid-template-columns: repeat(1, 1fr);        
+    }
+    .latest-news .all-news .news {     
+        grid-template-columns: repeat(1, 1fr);       
+    }
+
+  
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .banner .container {
+        flex-direction: column;
+	    padding: 30px 60px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .half-area {
+        width: 100%;
+    }
+    .banner-img .img {
+    margin-top: 70px;
+    }
+    .profile .players-profile {        
+        grid-template-columns: repeat(1, 1fr);       
+    }
+    .feature .featured-videos .videos {        
+        grid-template-columns: repeat(1, 1fr);        
+    }
+    .latest-news .all-news .news {     
+        grid-template-columns: repeat(1, 1fr);       
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+   
+    
+}
+    
+
+
+
+
+/* .container {
+	width: 960px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px 60px;
+	justify-content: center;
+} */

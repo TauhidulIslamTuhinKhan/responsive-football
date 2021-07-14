@@ -134,6 +134,7 @@ img {
     font-size: 16px;
     font-weight: 500;
     color: #6C6C6C;
+    text-align: justify;
 }
 
 /*--
@@ -290,6 +291,9 @@ img {
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
+    .banner-text .banner-heading {
+        font-size: 36px;       
+    }
     .banner .container {
         flex-direction: column;
 	    padding: 30px 60px;
@@ -312,11 +316,14 @@ img {
     .latest-news .all-news .news {     
         grid-template-columns: repeat(1, 1fr);       
     }
-
-  
-
-
+    .footer .logo img {
+        width: 280px;  
+        height: 80px;     
+    }
 }
+
+
+
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -342,23 +349,39 @@ img {
     .latest-news .all-news .news {     
         grid-template-columns: repeat(1, 1fr);       
     }
+    .footer .logo img {
+        width: 280px;  
+        height: 80px;     
+    }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-   
+    .banner .container {
+        flex-direction: column;
+	    padding: 30px 60px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .half-area {
+        width: 100%;
+    }
+    .banner-img .img {
+    margin-top: 70px;
+    }
+    .profile .players-profile {        
+        grid-template-columns: repeat(2, 1fr);       
+    }
+    .feature .featured-videos .videos {        
+        grid-template-columns: repeat(1, 1fr);        
+    }
+    .latest-news .all-news .news {     
+        grid-template-columns: repeat(1, 1fr);       
+    }
     
 }
     
 
 
 
-
-/* .container {
-	width: 960px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	padding: 30px 60px;
-	justify-content: center;
-} */

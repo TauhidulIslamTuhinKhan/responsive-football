@@ -7,8 +7,9 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -18,24 +19,29 @@ ul {
 a {
     text-decoration: none;
 }
+
 img {
     vertical-align: middle;
 }
+
 .bg-area {
-    width: 100%;  
-    display: flex;  
-    justify-content: center;       
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
 .container {
     width: 960px;
-    display: flex;      
-    align-items: center;  
+    display: flex;
+    align-items: center;
     /* flex-direction: column; */
-        
+
 }
+
 .half-area {
     width: 50%;
 }
+
 .section-heading {
     font-size: 48px;
     font-weight: 700;
@@ -58,6 +64,7 @@ img {
     color: #fff;
     margin-bottom: 20px;
 }
+
 .banner-text .button {
     font-size: 16px;
     font-weight: 500;
@@ -66,21 +73,26 @@ img {
     background-color: #E02C6D;
     transition: all linear .3s;
 }
+
 .banner-text .button:hover {
     background-color: #F8FF69;
-    color: #E02C6D;    
+    color: #E02C6D;
 }
+
 .banner-text .button .fa-arrow-right {
     margin-left: 8px;
 }
+
 .banner-img .img {
     padding-left: 70px;
 }
+
 .banner-img .img img {
     width: 100%;
     transform: scale(1);
     transition: all linear .3s;
 }
+
 .banner-img .img:hover img {
     transform: scale(1.2);
 }
@@ -91,30 +103,36 @@ img {
 .profile {
     margin-top: 70px;
 }
+
 .profile .players-profile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
 }
-.profile .players-profile .single-profile  {
+
+.profile .players-profile .single-profile {
     padding: 15px 15px 30px 15px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     border: 2px solid #f1f1f1;
-    transition: all linear .3s;    
+    transition: all linear .3s;
 }
+
 .profile .players-profile .single-profile:hover {
     border: 2px solid #2D25A0;
 }
+
 .profile .players-profile .single-profile .profile-img {
     overflow: hidden;
 }
+
 .profile .players-profile .single-profile .profile-img img {
-    width: 100%;    
+    width: 100%;
     transform: scale(1);
     cursor: pointer;
     transition: all linear .3s;
 }
+
 .profile .players-profile .single-profile .profile-img:hover img {
     transform: scale(1.15);
 }
@@ -127,9 +145,11 @@ img {
     cursor: pointer;
     transition: all linear .3s;
 }
+
 .profile .players-profile .single-profile:hover .player-info .player-name {
     color: #E02C6D;
 }
+
 .profile .players-profile .single-profile .player-info .player-carier {
     font-size: 16px;
     font-weight: 500;
@@ -143,26 +163,30 @@ img {
 .feature {
     margin-top: 70px;
 }
+
 .feature .featured-videos .videos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
 }
+
 .feature .videos .single-video {
     padding: 15px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     border: 2px solid #fff;
     transition: all linear .3s;
 }
+
 .feature .videos .single-video:hover {
     border: 2px solid #2D25A0;
 }
+
 .feature .videos .single-video .thumbnail {
     position: relative;
 }
 
 .feature .videos .single-video .thumbnail img {
-    width: 100%;    
+    width: 100%;
 }
 
 .feature .videos .single-video .thumbnail .overlay {
@@ -175,28 +199,33 @@ img {
     opacity: 0;
     transition: all linear .3s;
 }
+
 .feature .videos .single-video:hover .thumbnail .overlay {
     opacity: 1;
-} 
+}
+
 .feature .videos .single-video .thumbnail .fa-play-circle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color: #fff;     
+    color: #fff;
     opacity: 0;
     transition: all linear .5s;
 }
+
 .feature .videos .single-video:hover .thumbnail .fa-play-circle {
     opacity: 1;
 }
+
 /*--
     - Latest news
 -----------------------------------------*/
 .latest-news {
     margin-top: 70px;
 }
+
 .latest-news .all-news .news {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -215,11 +244,13 @@ img {
 .latest-news .news .single-news .img {
     margin-right: 15px;
 }
+
 .latest-news .news .single-news .img img {
     width: 120px;
     height: 100px;
     cursor: pointer;
 }
+
 .latest-news .news .single-news .news-update .last-time {
     font-size: 16px;
     font-weight: 500;
@@ -233,10 +264,12 @@ img {
     cursor: pointer;
     transition: all linear .2s;
 }
+
 .latest-news .news .single-news .news-update .news-heading:hover {
     color: #E02C6D;
     text-decoration: underline;
 }
+
 /*--
     - Footer
 -----------------------------------------*/
@@ -244,14 +277,17 @@ img {
     margin-top: 70px;
     padding-bottom: 50px;
 }
-.footer .container{
+
+.footer .container {
     display: flex;
     flex-direction: column;
 }
+
 .footer .logo img {
     width: 485px;
     height: 110px;
 }
+
 .footer .social-media i {
     font-size: 24px;
     width: 40px;
@@ -263,23 +299,29 @@ img {
     margin: 17px 7px;
     transition: all linear .3s;
 }
+
 .footer .social-media i:hover.fa-instagram {
     color: #A22D8E;
 }
+
 .footer .social-media i:hover.fa-dribbble {
     color: #F082AC;
 }
+
 .footer .social-media i:hover.fa-twitter {
     color: #5DA9DD;
 }
+
 .footer .social-media i:hover.fa-youtube {
     color: #FF0303;
 }
+
 .footer .footer-text .text {
     font-size: 18px;
     font-weight: 500;
     color: #000;
 }
+
 .footer .footer-text .fa-copyright {
     color: #7d7d81;
 }
@@ -290,64 +332,78 @@ img {
 
 @media (min-width: 320px) and (max-width: 767.98px) {
     .banner-text .banner-heading {
-        font-size: 46px;   
+        font-size: 46px;
     }
+
     .banner .container {
         flex-direction: column;
-	    padding: 30px 60px;
+        padding: 30px 60px;
     }
+
     .container {
         padding: 15px;
     }
+
     .half-area {
         width: 100%;
     }
+
     .banner-img .img {
         padding-left: 0;
         margin-top: 70px;
     }
-    .profile .players-profile {        
-        grid-template-columns: repeat(1, 1fr);       
+
+    .profile .players-profile {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .feature .featured-videos .videos {        
-        grid-template-columns: repeat(1, 1fr); 
-        grid-row-gap: 20px;       
+
+    .feature .featured-videos .videos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
     }
-    .latest-news .all-news .news {     
-        grid-template-columns: repeat(1, 1fr);       
+
+    .latest-news .all-news .news {
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .footer .logo img {
-        width: 280px;  
-        height: 80px;     
+        width: 280px;
+        height: 80px;
     }
 
 }
 
 
 
-@media (min-width: 768px) and (max-width: 1199.98px) { 
+@media (min-width: 768px) and (max-width: 1199.98px) {
     .banner .container {
         flex-direction: column;
-	    padding: 30px 60px;
+        padding: 30px 60px;
     }
+
     .container {
         padding: 15px;
     }
+
     .half-area {
         width: 100%;
     }
+
     .banner-img .img {
         padding-left: 20px;
         margin-top: 70px;
     }
-    .profile .players-profile {        
-        grid-template-columns: repeat(2, 1fr);       
+
+    .profile .players-profile {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .feature .featured-videos .videos {        
-        grid-template-columns: repeat(1, 1fr);  
-        grid-row-gap: 20px;      
+
+    .feature .featured-videos .videos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
     }
-    .latest-news .all-news .news {     
-        grid-template-columns: repeat(1, 1fr);       
+
+    .latest-news .all-news .news {
+        grid-template-columns: repeat(1, 1fr);
     }
- }
+}
